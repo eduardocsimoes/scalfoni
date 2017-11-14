@@ -4,7 +4,7 @@
 
 	$config = array();
 	if(ENVIRONMENT == "development"){
-		define("BASE_URL", "http://localhost:8080/loja_camisas/");
+		define("BASE_URL", "http://localhost:8080/scalfoni/");
 		$config['dbname'] = "loja_camisas";
 		$config['host'] = 'localhost';
 		$config['dbuser'] = 'root';

@@ -24,7 +24,7 @@ $(function(){
     	var senha = $("#senha").val();
     	
     	$.ajax({
-    		url:"http://localhost:8080/loja_camisas/ajax/login",
+    		url:"http://localhost:8080/scalfoni/ajax/login",
     		type:"POST",
     		data:'email='+email+'&senha='+senha,
     		success:function(r){
@@ -49,7 +49,7 @@ $(function(){
     	var obj = $(this).nextAll();
   	
     	$.ajax({
-    		url:"http://localhost:8080/loja_camisas/ajax/addCart",
+    		url:"http://localhost:8080/scalfoni/ajax/addCart",
     		type:"POST",
     		data:'idProduct='+idProduct+'&price='+price,
     		dataType: "json",
@@ -62,6 +62,6 @@ $(function(){
     });   
 
     function paginaInicial(){
-		$(window.document.location).attr('href',"http://localhost:8080/loja_camisas/");
+		$(window.document.location).attr('href',"http://localhost:8080/scalfoni/");
     }
 });
